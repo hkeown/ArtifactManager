@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Artifact Manager.iml" filepath="$PROJECT_DIR$/.idea/Artifact Manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ArtifactManager.iml" filepath="$PROJECT_DIR$/.idea/ArtifactManager.iml" />
     </modules>
   </component>
 </project>

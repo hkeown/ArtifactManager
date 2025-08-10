@@ -1,0 +1,30 @@
+# Claude Artifact Manager Requirements
+# Core dependencies for the artifact management system
+
+# Web interface (optional)
+flask>=2.0.0
+
+# Standard library modules (included with Python 3.7+)
+# pathlib - File system paths
+# sqlite3 - Database operations
+# json - JSON serialization
+# datetime - Date/time handling
+# hashlib - Cryptographic hashing
+# configparser - Configuration management
+# argparse - Command line argument parsing
+# logging - Logging framework
+# threading - Multi-threading support
+# contextlib - Context management
+# dataclasses - Data structure definitions
+# typing - Type hints
+
+# Development dependencies (optional)
+# pylint>=2.0.0          # Code quality checking
+# black>=22.0.0          # Code formatting
+# pytest>=6.0.0          # Unit testing
+# mypy>=0.910            # Static type checking
+
+# Installation instructions:
+# pip install -r requirements.txt
+# or for core functionality only:
+# pip install flask
