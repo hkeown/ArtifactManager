@@ -1,0 +1,7 @@
+2025-08-10 14:30:15,597 - __main__ - INFO - Database initialized successfully
+2025-08-10 14:30:15,599 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts
+2025-08-10 14:30:15,599 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-10 14:30:15,630 - __main__ - INFO - Saved artifact: Test Artifact (ID: 20250810_143015_a6db7fd2e7ab)
+2025-08-10 14:30:15,687 - __main__ - INFO - Updated artifact 20250810_143015_a6db7fd2e7ab
+2025-08-10 14:30:15,711 - __main__ - INFO - Deleted artifact: Updated Test Artifact (20250810_143015_a6db7fd2e7ab)
+2025-08-10 14:30:15,711 - __main__ - INFO - Artifact manager closed successfully
