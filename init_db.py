@@ -87,7 +87,7 @@ def insert_default_data(conn):
     )
 
     # Sample artifact content
-    sample_content = '''print("Hello from Claude Artifact Manager!")
+    sample_content = '''print("Hello from Artifact Manager!")
 
 def welcome():
     """Sample function to test the artifact system"""
@@ -139,7 +139,7 @@ def create_directories(storage_dir):
         print(f"✅ Created directory: {dir_path}")
 
 
-def init_database(storage_path="claude_artifacts"):
+def init_database(storage_path="artifacts_data"):
     """Initialize the artifact manager database"""
 
     try:
@@ -220,7 +220,7 @@ def init_database(storage_path="claude_artifacts"):
 def main():
     """Main function with proper error handling"""
 
-    print("🚀 Claude Artifact Manager - Database Initialization")
+    print("🚀 Artifact Manager - Database Initialization")
     print("=" * 60)
 
     success = init_database()

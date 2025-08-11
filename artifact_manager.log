@@ -30,3 +30,407 @@
 2025-08-10 23:39:07,313 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:39:07] "GET / HTTP/1.1" 200 -
 2025-08-10 23:42:15,302 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:42:15] "GET /api/stats HTTP/1.1" 200 -
 2025-08-10 23:42:41,915 - __main__ - INFO - Artifact manager closed successfully
+2025-08-10 23:57:38,616 - __main__ - INFO - Database initialized successfully
+2025-08-10 23:57:38,618 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts
+2025-08-10 23:57:38,619 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-10 23:57:38,936 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-10 23:57:38,936 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-10 23:57:45,518 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:57:45] "GET / HTTP/1.1" 200 -
+2025-08-10 23:57:51,871 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:57:51] "GET / HTTP/1.1" 200 -
+2025-08-10 23:58:01,625 - __main__ - INFO - Artifact manager closed successfully
+2025-08-10 23:58:08,842 - __main__ - INFO - Database initialized successfully
+2025-08-10 23:58:08,845 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts
+2025-08-10 23:58:08,845 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-10 23:58:09,069 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-10 23:58:09,070 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-10 23:58:13,496 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:58:13] "GET / HTTP/1.1" 200 -
+2025-08-10 23:58:27,712 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:58:27] "GET / HTTP/1.1" 200 -
+2025-08-10 23:58:29,240 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:58:29] "GET / HTTP/1.1" 200 -
+2025-08-10 23:59:38,335 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:59:38] "GET /api/health HTTP/1.1" 200 -
+2025-08-10 23:59:38,605 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:59:38] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-10 23:59:55,488 - __main__ - ERROR - Failed to load content from files\sample_20250810_183151.py: File not found: files\sample_20250810_183151.py
+2025-08-10 23:59:55,489 - __main__ - ERROR - Failed to get artifact sample_20250810_183151: Failed to load content: File not found: files\sample_20250810_183151.py
+2025-08-10 23:59:55,490 - werkzeug - INFO - 127.0.0.1 - - [10/Aug/2025 23:59:55] "[33mGET /api/artifacts/sample_20250810_183151 HTTP/1.1[0m" 404 -
+2025-08-11 00:00:00,606 - __main__ - ERROR - Failed to load content from files\sample_20250810_180730.py: File not found: files\sample_20250810_180730.py
+2025-08-11 00:00:00,606 - __main__ - ERROR - Failed to get artifact sample_20250810_180730: Failed to load content: File not found: files\sample_20250810_180730.py
+2025-08-11 00:00:00,607 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:00:00] "[33mGET /api/artifacts/sample_20250810_180730 HTTP/1.1[0m" 404 -
+2025-08-11 00:00:06,542 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:00:06] "GET /api/stats HTTP/1.1" 200 -
+2025-08-11 00:00:20,137 - __main__ - ERROR - Failed to load content from files\sample_20250810_183151.py: File not found: files\sample_20250810_183151.py
+2025-08-11 00:00:20,138 - __main__ - ERROR - Failed to get artifact sample_20250810_183151: Failed to load content: File not found: files\sample_20250810_183151.py
+2025-08-11 00:00:20,139 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:00:20] "[33mGET /api/artifacts/sample_20250810_183151 HTTP/1.1[0m" 404 -
+2025-08-11 00:00:24,489 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:00:24] "[33mGET /api/artifacts/undefined/download HTTP/1.1[0m" 404 -
+2025-08-11 00:00:59,578 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:00:59] "GET / HTTP/1.1" 200 -
+2025-08-11 00:01:07,096 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:01:14,574 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:01:22,124 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:01:22,127 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts
+2025-08-11 00:01:22,127 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:01:22,352 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:01:22,352 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:01:26,119 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:01:26] "GET / HTTP/1.1" 200 -
+2025-08-11 00:01:40,156 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:01:50,560 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:01:50,563 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts
+2025-08-11 00:01:50,563 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:01:50,779 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:01:50,779 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:01:55,226 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:01:55] "GET / HTTP/1.1" 200 -
+2025-08-11 00:05:28,632 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:05:28] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:05:28,944 - __main__ - INFO - Saved artifact: Test (ID: 20250811_000528_94ee059335e5)
+2025-08-11 00:05:28,945 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:05:28] "[35m[1mPOST /api/artifacts HTTP/1.1[0m" 201 -
+2025-08-11 00:05:28,959 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:05:28] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:05:40,052 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:05:40] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 00:05:40,329 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:05:40] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:05:44,258 - __main__ - ERROR - Failed to load content from files\sample_20250810_183151.py: File not found: files\sample_20250810_183151.py
+2025-08-11 00:05:44,259 - __main__ - ERROR - Failed to get artifact sample_20250810_183151: Failed to load content: File not found: files\sample_20250810_183151.py
+2025-08-11 00:05:44,260 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:05:44] "[33mGET /api/artifacts/sample_20250810_183151 HTTP/1.1[0m" 404 -
+2025-08-11 00:27:12,392 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:27:12,394 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:27:12,395 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:27:12,614 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:27:12,614 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:28:24,096 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:28:25,995 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:28:25,997 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:28:25,997 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:28:26,251 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:28:26,251 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:28:30,007 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:28:30] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 00:28:30,254 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:30,255 - __main__ - ERROR - Query execution failed: 
+                SELECT id, title, artifact_type, language, tags, created, modified,
+               ... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:30,255 - __main__ - ERROR - Search failed: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:30,256 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:28:30] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:28:38,433 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:38,433 - __main__ - ERROR - Query execution failed: SELECT COUNT(*) FROM artifacts... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:38,434 - __main__ - WARNING - Failed to get artifact count: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:38,435 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:38,435 - __main__ - ERROR - Query execution failed: SELECT COUNT(DISTINCT project) FROM artifacts... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:38,436 - __main__ - WARNING - Failed to get project count: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:38,437 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:38,437 - __main__ - ERROR - Query execution failed: SELECT artifact_type, COUNT(*) FROM artifacts GROUP BY artifact_type... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:38,437 - __main__ - WARNING - Failed to get type distribution: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:38,438 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:38,439 - __main__ - ERROR - Query execution failed: SELECT language, COUNT(*) FROM artifacts WHERE language IS NOT NULL GROUP BY language... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:38,439 - __main__ - WARNING - Failed to get language distribution: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:38,440 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:38,440 - __main__ - ERROR - Query execution failed: SELECT SUM(size) FROM artifacts... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:38,440 - __main__ - WARNING - Failed to calculate storage usage: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:38,441 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:28:38] "GET /api/stats HTTP/1.1" 200 -
+2025-08-11 00:28:47,390 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:28:47] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 00:28:47,654 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:28:47,655 - __main__ - ERROR - Query execution failed: 
+                SELECT id, title, artifact_type, language, tags, created, modified,
+               ... Error: Database operation failed: unable to open database file
+2025-08-11 00:28:47,655 - __main__ - ERROR - Search failed: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:28:47,655 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:28:47] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:30:22,325 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:30:22] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:30:22,589 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:30:22,589 - __main__ - ERROR - Query execution failed: SELECT COUNT(*) FROM artifacts... Error: Database operation failed: unable to open database file
+2025-08-11 00:30:22,590 - __main__ - ERROR - Failed to save artifact 'Test': Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:30:22,590 - __main__ - ERROR - Error creating artifact: Failed to save artifact: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:30:22,591 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:30:22] "[35m[1mPOST /api/artifacts HTTP/1.1[0m" 500 -
+2025-08-11 00:30:36,204 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:30:36] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:30:36,528 - __main__ - ERROR - Database error: unable to open database file
+2025-08-11 00:30:36,528 - __main__ - ERROR - Query execution failed: SELECT COUNT(*) FROM artifacts... Error: Database operation failed: unable to open database file
+2025-08-11 00:30:36,529 - __main__ - ERROR - Failed to save artifact 'Test': Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:30:36,529 - __main__ - ERROR - Error creating artifact: Failed to save artifact: Query execution failed: Database operation failed: unable to open database file
+2025-08-11 00:30:36,530 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:30:36] "[35m[1mPOST /api/artifacts HTTP/1.1[0m" 500 -
+2025-08-11 00:31:47,936 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:32:03,077 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:32:08,612 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:32:08,614 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:32:08,614 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:32:08,832 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:32:08,832 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:32:16,862 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:32:16] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:32:17,161 - __main__ - INFO - Saved artifact: Test (ID: 20250811_003217_532eaabd9574)
+2025-08-11 00:32:17,162 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:32:17] "[35m[1mPOST /api/artifacts HTTP/1.1[0m" 201 -
+2025-08-11 00:32:17,175 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:32:17] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:32:29,253 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:32:29] "GET /api/artifacts/20250811_003217_532eaabd9574 HTTP/1.1" 200 -
+2025-08-11 00:32:52,359 - __main__ - ERROR - Failed to load content from files\sample_20250810_095318.py: File not found: files\sample_20250810_095318.py
+2025-08-11 00:32:52,360 - __main__ - ERROR - Failed to get artifact sample_20250810_095318: Failed to load content: File not found: files\sample_20250810_095318.py
+2025-08-11 00:32:52,361 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:32:52] "[33mGET /api/artifacts/sample_20250810_095318 HTTP/1.1[0m" 404 -
+2025-08-11 00:32:57,735 - __main__ - ERROR - Failed to load content from files\sample_20250810_095318.py: File not found: files\sample_20250810_095318.py
+2025-08-11 00:32:57,735 - __main__ - ERROR - Failed to get artifact sample_20250810_095318: Failed to load content: File not found: files\sample_20250810_095318.py
+2025-08-11 00:32:57,736 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:32:57] "[33mGET /api/artifacts/sample_20250810_095318 HTTP/1.1[0m" 404 -
+2025-08-11 00:33:02,591 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:33:02] "GET /api/artifacts/20250811_003217_532eaabd9574 HTTP/1.1" 200 -
+2025-08-11 00:33:10,303 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:33:10] "OPTIONS /api/artifacts/20250811_003217_532eaabd9574 HTTP/1.1" 200 -
+2025-08-11 00:33:10,657 - __main__ - INFO - Deleted artifact: Test (20250811_003217_532eaabd9574)
+2025-08-11 00:33:10,658 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:33:10] "DELETE /api/artifacts/20250811_003217_532eaabd9574 HTTP/1.1" 200 -
+2025-08-11 00:33:10,878 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:33:10] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:33:14,061 - __main__ - ERROR - Failed to load content from C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts\files\20250811_000528_94ee059335e5.txt: File not found: C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts\files\20250811_000528_94ee059335e5.txt
+2025-08-11 00:33:14,062 - __main__ - ERROR - Failed to get artifact 20250811_000528_94ee059335e5: Failed to load content: File not found: C:\Users\hkeow\PycharmProjects\Artifact Manager\claude_artifacts\files\20250811_000528_94ee059335e5.txt
+2025-08-11 00:33:14,063 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:33:14] "[33mGET /api/artifacts/20250811_000528_94ee059335e5 HTTP/1.1[0m" 404 -
+2025-08-11 00:33:18,348 - __main__ - ERROR - Failed to load content from files\sample_20250810_183151.py: File not found: files\sample_20250810_183151.py
+2025-08-11 00:33:18,349 - __main__ - ERROR - Failed to get artifact sample_20250810_183151: Failed to load content: File not found: files\sample_20250810_183151.py
+2025-08-11 00:33:18,350 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:33:18] "[33mGET /api/artifacts/sample_20250810_183151 HTTP/1.1[0m" 404 -
+2025-08-11 00:37:54,877 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:44:16,081 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:44:16,083 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:44:16,083 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:44:16,320 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:44:16,320 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:44:22,907 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:22] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 00:44:23,174 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:23] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:44:27,295 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:27] "GET /api/artifacts/20250811_000528_94ee059335e5 HTTP/1.1" 200 -
+2025-08-11 00:44:34,678 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:34] "OPTIONS /api/artifacts/20250811_000528_94ee059335e5 HTTP/1.1" 200 -
+2025-08-11 00:44:34,944 - __main__ - INFO - Deleted artifact: Test (20250811_000528_94ee059335e5)
+2025-08-11 00:44:34,945 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:34] "DELETE /api/artifacts/20250811_000528_94ee059335e5 HTTP/1.1" 200 -
+2025-08-11 00:44:35,007 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:35] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:44:39,295 - __main__ - ERROR - Failed to load content from files\sample_20250810_183151.py: File not found: files\sample_20250810_183151.py
+2025-08-11 00:44:39,296 - __main__ - ERROR - Failed to get artifact sample_20250810_183151: Failed to load content: File not found: files\sample_20250810_183151.py
+2025-08-11 00:44:39,297 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:44:39] "[33mGET /api/artifacts/sample_20250810_183151 HTTP/1.1[0m" 404 -
+2025-08-11 00:48:57,893 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:48:59,696 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:48:59,697 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:48:59,697 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:48:59,923 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:48:59,923 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:50:40,143 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:50:41,347 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:50:41,348 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:50:41,349 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:50:41,572 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:50:41,572 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:50:45,350 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:50:45] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 00:50:45,617 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:50:45] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:50:47,555 - __main__ - ERROR - Failed to load content from files\sample_20250810_180730.py: File not found: files\sample_20250810_180730.py
+2025-08-11 00:50:47,555 - __main__ - ERROR - Failed to get artifact sample_20250810_180730: Failed to load content: File not found: files\sample_20250810_180730.py
+2025-08-11 00:50:47,556 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:50:47] "[33mGET /api/artifacts/sample_20250810_180730 HTTP/1.1[0m" 404 -
+2025-08-11 00:53:43,007 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 00:53:44,453 - __main__ - INFO - Database initialized successfully
+2025-08-11 00:53:44,455 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 00:53:44,455 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 00:53:44,685 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 00:53:44,685 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 00:53:54,271 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:53:54] "GET /api/artifacts/sample_20250810_180730 HTTP/1.1" 200 -
+2025-08-11 00:54:03,737 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:03] "OPTIONS /api/artifacts/sample_20250810_180730 HTTP/1.1" 200 -
+2025-08-11 00:54:04,069 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_180730)
+2025-08-11 00:54:04,070 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:04] "DELETE /api/artifacts/sample_20250810_180730 HTTP/1.1" 200 -
+2025-08-11 00:54:04,316 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:04] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:54:09,350 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:09] "GET /api/artifacts/sample_20250810_183151 HTTP/1.1" 200 -
+2025-08-11 00:54:14,022 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:14] "OPTIONS /api/artifacts/sample_20250810_183151 HTTP/1.1" 200 -
+2025-08-11 00:54:14,296 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_183151)
+2025-08-11 00:54:14,297 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:14] "DELETE /api/artifacts/sample_20250810_183151 HTTP/1.1" 200 -
+2025-08-11 00:54:14,336 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:14] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:54:18,643 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:18] "GET /api/artifacts/sample_20250810_160135 HTTP/1.1" 200 -
+2025-08-11 00:54:23,467 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:23] "OPTIONS /api/artifacts/sample_20250810_160135 HTTP/1.1" 200 -
+2025-08-11 00:54:23,745 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_160135)
+2025-08-11 00:54:23,746 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:23] "DELETE /api/artifacts/sample_20250810_160135 HTTP/1.1" 200 -
+2025-08-11 00:54:23,782 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:23] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:54:31,817 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:31] "GET /api/artifacts/sample_20250810_145523 HTTP/1.1" 200 -
+2025-08-11 00:54:35,776 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:35] "OPTIONS /api/artifacts/sample_20250810_145523 HTTP/1.1" 200 -
+2025-08-11 00:54:36,053 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_145523)
+2025-08-11 00:54:36,054 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:36] "DELETE /api/artifacts/sample_20250810_145523 HTTP/1.1" 200 -
+2025-08-11 00:54:36,108 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:36] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:54:39,394 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:39] "GET /api/artifacts/sample_20250810_144927 HTTP/1.1" 200 -
+2025-08-11 00:54:45,208 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:45] "OPTIONS /api/artifacts/sample_20250810_144927 HTTP/1.1" 200 -
+2025-08-11 00:54:45,486 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_144927)
+2025-08-11 00:54:45,487 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:45] "DELETE /api/artifacts/sample_20250810_144927 HTTP/1.1" 200 -
+2025-08-11 00:54:45,520 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:45] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:54:51,117 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:51] "GET /api/artifacts/sample_20250810_095719 HTTP/1.1" 200 -
+2025-08-11 00:54:54,313 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:54] "OPTIONS /api/artifacts/sample_20250810_095719 HTTP/1.1" 200 -
+2025-08-11 00:54:54,581 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_095719)
+2025-08-11 00:54:54,582 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:54] "DELETE /api/artifacts/sample_20250810_095719 HTTP/1.1" 200 -
+2025-08-11 00:54:54,644 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:54:54] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:07,239 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:07] "GET /api/artifacts/sample_20250810_095318 HTTP/1.1" 200 -
+2025-08-11 00:55:11,806 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:11] "OPTIONS /api/artifacts/sample_20250810_095318 HTTP/1.1" 200 -
+2025-08-11 00:55:12,063 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_095318)
+2025-08-11 00:55:12,064 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:12] "DELETE /api/artifacts/sample_20250810_095318 HTTP/1.1" 200 -
+2025-08-11 00:55:12,138 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:12] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:16,984 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:16] "GET /api/artifacts/sample_20250810_095741 HTTP/1.1" 200 -
+2025-08-11 00:55:20,049 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:20] "OPTIONS /api/artifacts/sample_20250810_095741 HTTP/1.1" 200 -
+2025-08-11 00:55:20,314 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_095741)
+2025-08-11 00:55:20,315 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:20] "DELETE /api/artifacts/sample_20250810_095741 HTTP/1.1" 200 -
+2025-08-11 00:55:20,373 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:20] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:23,975 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:23] "GET /api/artifacts/sample_20250810_095721 HTTP/1.1" 200 -
+2025-08-11 00:55:26,869 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:26] "OPTIONS /api/artifacts/sample_20250810_095721 HTTP/1.1" 200 -
+2025-08-11 00:55:27,134 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_095721)
+2025-08-11 00:55:27,135 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:27] "DELETE /api/artifacts/sample_20250810_095721 HTTP/1.1" 200 -
+2025-08-11 00:55:27,189 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:27] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:31,209 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:31] "GET /api/artifacts/sample_20250810_095856 HTTP/1.1" 200 -
+2025-08-11 00:55:34,435 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:34] "OPTIONS /api/artifacts/sample_20250810_095856 HTTP/1.1" 200 -
+2025-08-11 00:55:34,686 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_095856)
+2025-08-11 00:55:34,686 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:34] "DELETE /api/artifacts/sample_20250810_095856 HTTP/1.1" 200 -
+2025-08-11 00:55:34,765 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:34] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:37,937 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:37] "GET /api/artifacts/sample_20250810_095749 HTTP/1.1" 200 -
+2025-08-11 00:55:41,160 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:41] "OPTIONS /api/artifacts/sample_20250810_095749 HTTP/1.1" 200 -
+2025-08-11 00:55:41,437 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_095749)
+2025-08-11 00:55:41,438 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:41] "DELETE /api/artifacts/sample_20250810_095749 HTTP/1.1" 200 -
+2025-08-11 00:55:41,492 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:41] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:45,553 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:45] "GET /api/artifacts/sample_20250810_100701 HTTP/1.1" 200 -
+2025-08-11 00:55:48,824 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:48] "OPTIONS /api/artifacts/sample_20250810_100701 HTTP/1.1" 200 -
+2025-08-11 00:55:49,087 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_100701)
+2025-08-11 00:55:49,088 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:49] "DELETE /api/artifacts/sample_20250810_100701 HTTP/1.1" 200 -
+2025-08-11 00:55:49,142 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:49] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:52,024 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:52] "GET /api/artifacts/sample_20250810_100638 HTTP/1.1" 200 -
+2025-08-11 00:55:55,363 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:55] "OPTIONS /api/artifacts/sample_20250810_100638 HTTP/1.1" 200 -
+2025-08-11 00:55:55,642 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_100638)
+2025-08-11 00:55:55,644 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:55] "DELETE /api/artifacts/sample_20250810_100638 HTTP/1.1" 200 -
+2025-08-11 00:55:55,679 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:55] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 00:55:58,998 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:55:58] "GET /api/artifacts/sample_20250810_141956 HTTP/1.1" 200 -
+2025-08-11 00:56:03,798 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:56:03] "OPTIONS /api/artifacts/sample_20250810_141956 HTTP/1.1" 200 -
+2025-08-11 00:56:04,071 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_141956)
+2025-08-11 00:56:04,071 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:56:04] "DELETE /api/artifacts/sample_20250810_141956 HTTP/1.1" 200 -
+2025-08-11 00:56:04,126 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 00:56:04] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 06:43:39,967 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 06:43:39] "GET /api/artifacts/sample_20250810_100759 HTTP/1.1" 200 -
+2025-08-11 06:43:53,021 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 06:43:53] "OPTIONS /api/artifacts/sample_20250810_100759 HTTP/1.1" 200 -
+2025-08-11 06:43:53,359 - __main__ - INFO - Deleted artifact: Sample Python Script (sample_20250810_100759)
+2025-08-11 06:43:53,361 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 06:43:53] "DELETE /api/artifacts/sample_20250810_100759 HTTP/1.1" 200 -
+2025-08-11 06:43:53,610 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 06:43:53] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 06:43:58,594 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 06:43:58] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 06:43:58,922 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 06:43:58] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 13:37:06,727 - __main__ - INFO - Database initialized successfully
+2025-08-11 13:37:06,729 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 13:37:06,730 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 13:37:07,419 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 13:37:07,420 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:38:44,506 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:38:44] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 13:38:44,756 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:38:44] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 13:38:59,376 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:38:59] "GET /api/stats HTTP/1.1" 200 -
+2025-08-11 13:46:46,315 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:46:46] "GET / HTTP/1.1" 200 -
+2025-08-11 13:46:46,872 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:46:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-11 13:46:51,694 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:46:51] "GET / HTTP/1.1" 200 -
+2025-08-11 13:46:56,400 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:46:56] "GET / HTTP/1.1" 200 -
+2025-08-11 13:47:06,085 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:06] "[33mGET /api HTTP/1.1[0m" 404 -
+2025-08-11 13:47:08,459 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:08] "[33mGET /api HTTP/1.1[0m" 404 -
+2025-08-11 13:47:10,142 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:10] "[33mGET /api HTTP/1.1[0m" 404 -
+2025-08-11 13:47:57,708 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:57] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 13:47:57,979 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:57] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 13:52:11,249 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:11] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 13:52:11,508 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:11] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 13:55:39,387 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 13:56:54,361 - __main__ - INFO - Database initialized successfully
+2025-08-11 13:56:54,363 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 13:56:54,363 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 13:56:54,664 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 13:56:54,664 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:57:06,398 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:57:06] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 13:57:06,607 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:57:06] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 14:26:45,839 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 14:26:52,687 - __main__ - INFO - Database initialized successfully
+2025-08-11 14:26:52,689 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 14:26:52,689 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 14:26:53,037 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 14:26:53,037 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:35:32,523 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:35:32] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 14:35:32,801 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:35:32] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-11 14:35:39,650 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:35:39] "GET / HTTP/1.1" 200 -
+2025-08-11 14:37:16,018 - __main__ - INFO - Artifact manager closed successfully
+2025-08-11 23:54:59,725 - __main__ - INFO - Database initialized successfully
+2025-08-11 23:54:59,728 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-11 23:54:59,728 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-11 23:55:00,824 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-11 23:55:00,824 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 23:55:16,967 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:16] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:16,970 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:16] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:16,977 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:16] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:17,307 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:17] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:52,982 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:52] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:52,983 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:52] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:53,229 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:53] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:55:53,308 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:55:53] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:08,008 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:08] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:08,315 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:08] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:08,317 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:08] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:08,627 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:08] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:15,480 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:15] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:15,787 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:15] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:15,797 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:15] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:16,118 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:16] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:20,853 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:20] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:56:21,128 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:56:21] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:58:40,869 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:58:40] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:58:40,870 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:58:40] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-11 23:58:41,121 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:58:41] "GET /api/health HTTP/1.1" 200 -
+2025-08-11 23:58:41,180 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 23:58:41] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:17:43,522 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:43] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:17:43,768 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:43] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:17:43,842 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:43] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:17:44,093 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:17:44,094 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:17:44,172 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "OPTIONS /api/projects HTTP/1.1" 200 -
+2025-08-12 00:17:44,173 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:17:44,188 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:17:44,418 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "GET /api/projects HTTP/1.1" 200 -
+2025-08-12 00:17:44,501 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:17:44,506 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:17:44] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:18:17,152 - __main__ - INFO - Artifact manager closed successfully
+2025-08-12 00:18:20,470 - __main__ - INFO - Database initialized successfully
+2025-08-12 00:18:20,472 - __main__ - INFO - Artifact manager initialized at C:\Users\hkeow\PycharmProjects\Artifact Manager\artifacts
+2025-08-12 00:18:20,473 - __main__ - INFO - Artifact manager initialized successfully
+2025-08-12 00:18:20,702 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-08-12 00:18:20,703 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 00:21:25,173 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:21:25] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:21:25,472 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:21:25] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:23:45,461 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:45] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:23:45,724 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:45] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:23:45,785 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:45] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:23:46,053 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "OPTIONS /api/projects HTTP/1.1" 200 -
+2025-08-12 00:23:46,055 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:23:46,056 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:23:46,062 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:23:46,099 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "GET /api/projects HTTP/1.1" 200 -
+2025-08-12 00:23:46,380 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:23:46,400 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:23:46] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:24:08,846 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:08] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:09,149 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:09,154 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:09,479 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:09,481 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:09,482 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "OPTIONS /api/projects HTTP/1.1" 200 -
+2025-08-12 00:24:09,483 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:24:09,485 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:09,813 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "GET /api/projects HTTP/1.1" 200 -
+2025-08-12 00:24:09,817 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:09,831 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:09] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:24:10,078 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:10] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:22,915 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:22] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:23,223 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:23,230 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:23,556 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:24:23,558 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:23,559 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "OPTIONS /api/projects HTTP/1.1" 200 -
+2025-08-12 00:24:23,561 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:24:23,563 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:23,901 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "GET /api/projects HTTP/1.1" 200 -
+2025-08-12 00:24:23,905 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:24:23,929 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:23] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:24:24,225 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:24:24] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:25:03,606 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:25:03] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:25:03,889 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:25:03] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:25:04,881 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:25:04] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:27:41,454 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:41] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:27:41,706 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:41] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:27:41,767 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:41] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:27:42,046 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:42] "OPTIONS /api/projects HTTP/1.1" 200 -
+2025-08-12 00:27:42,047 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:42] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:27:42,053 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:42] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:27:42,111 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:42] "GET /api/stats HTTP/1.1" 200 -
+2025-08-12 00:27:42,525 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:27:42] "GET /api/projects HTTP/1.1" 200 -
+2025-08-12 00:30:24,678 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:24] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-08-12 00:30:24,846 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:24] "GET /api/health HTTP/1.1" 200 -
+2025-08-12 00:30:25,016 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:25] "OPTIONS /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:30:25,169 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:25] "OPTIONS /api/projects HTTP/1.1" 200 -
+2025-08-12 00:30:25,170 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:25] "OPTIONS /api/stats HTTP/1.1" 200 -
+2025-08-12 00:30:25,179 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:25] "GET /api/artifacts HTTP/1.1" 200 -
+2025-08-12 00:30:25,362 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:25] "GET /api/projects HTTP/1.1" 200 -
+2025-08-12 00:30:26,031 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 00:30:26] "GET /api/stats HTTP/1.1" 200 -

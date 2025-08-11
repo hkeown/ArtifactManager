@@ -414,7 +414,7 @@ class ConfigManager:
 class RobustArtifactManager:
     """Production-ready artifact manager with comprehensive error handling"""
 
-    def __init__(self, storage_path: str = "claude_artifacts") -> None:
+    def __init__(self, storage_path: str = "artifacts") -> None:
         try:
             self.storage_path: Path = Path(storage_path).resolve()
             self.storage_path.mkdir(parents=True, exist_ok=True)
@@ -1618,7 +1618,7 @@ def main() -> None:
     try:
         parser: argparse.ArgumentParser = argparse.ArgumentParser(
             description='Robust Claude Artifact Manager - COMPLETE VERSION')
-        parser.add_argument('--storage', default='claude_artifacts', help='Storage directory')
+        parser.add_argument('--storage', default='artifacts', help='Storage directory')
         parser.add_argument('--stats', action='store_true', help='Show statistics')
         parser.add_argument('--test', action='store_true', help='Run basic test')
         parser.add_argument('--web', action='store_true', help='Start web interface')

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifact Manager</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+            color: #1a202c;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .header {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; }
+        .connected { color: #38a169; }
+        .connected .status-dot { background: #38a169; }
+        .disconnected { color: #e53e3e; }
+        .disconnected .status-dot { background: #e53e3e; }
+        .checking { color: #d69e2e; }
+        .checking .status-dot { background: #d69e2e; }
+
+        .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+        .button {
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .button:hover { background: #3182ce; transform: translateY(-1px); }
+        .button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+        .button.secondary { background: #718096; }
+        .button.secondary:hover { background: #4a5568; }
+        .button.danger { background: #e53e3e; }
+        .button.danger:hover { background: #c53030; }
+
+        .search-input {
+            padding: 10px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            min-width: 250px;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 0;
+            line-height: 1.3;
+        }
+        .card-meta {
+            font-size: 13px;
+            color: #718096;
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .tag {
+            background: #edf2f7;
+            color: #4a5568;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .language-tag {
+            background: #bee3f8;
+            color: #2c5282;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+        .modal-content {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .modal h2 { margin-top: 0; color: #2d3748; }
+
+        .form-group { margin-bottom: 20px; }
+        .label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        .input, .select, .textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+        .input:focus, .select:focus, .textarea:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+        }
+        .textarea {
+            height: 200px;
+            resize: vertical;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+        }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .error-banner {
+            background: #fed7d7;
+            border: 1px solid #feb2b2;
+            color: #c53030;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+        .error-banner h3 { margin: 0 0 8px 0; font-size: 16px; }
+        .error-banner p { margin: 4px 0; }
+        .error-banner code {
+            background: rgba(197, 48, 48, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #718096;
+        }
+        .empty-state .icon { font-size: 64px; margin-bottom: 16px; opacity: 0.5; }
+        .empty-state h3 { margin: 0 0 8px 0; color: #4a5568; }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #718096;
+        }
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid #e2e8f0;
+            border-top: 3px solid #4299e1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        .artifact-content {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .hidden { display: none !important; }
+
+        @media (max-width: 768px) {
+            .header { flex-direction: column; align-items: stretch; }
+            .controls { justify-content: center; }
+            .form-row { grid-template-columns: 1fr; }
+            .modal-content { padding: 24px; margin: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>📁 Artifact Manager</h1>
+                <div id="status" class="status checking">
+                    <div class="status-dot"></div>
+                    <span>Checking connection...</span>
+                </div>
+            </div>
+            <div class="controls">
+                <input type="text" id="search" class="search-input" placeholder="Search artifacts...">
+                <select id="typeFilter" class="select" style="width: auto;">
+                    <option value="all">All Types</option>
+                    <option value="code">Code</option>
+                    <option value="document">Document</option>
+                    <option value="html">HTML</option>
+                    <option value="data">Data</option>
+                    <option value="text">Text</option>
+                </select>
+                <button class="button" onclick="showStats()">📊 Stats</button>
+                <button class="button" onclick="showAddModal()">➕ Add Artifact</button>
+            </div>
+        </div>
+
+        <div id="error" class="error-banner hidden"></div>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading artifacts...</p>
+        </div>
+        <div id="artifacts" class="grid"></div>
+
+        <!-- Add Modal -->
+        <div id="addModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Add New Artifact</h2>
+                <form id="addForm">
+                    <div class="form-group">
+                        <label class="label">Title *</label>
+                        <input type="text" id="title" class="input" placeholder="Enter artifact title" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="label">Type</label>
+                            <select id="type" class="select">
+                                <option value="code">Code</option>
+                                <option value="document">Document</option>
+                                <option value="html">HTML</option>
+                                <option value="data">Data</option>
+                                <option value="text">Text</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Language</label>
+                            <input type="text" id="language" class="input" placeholder="e.g., javascript, python">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">Tags</label>
+                        <input type="text" id="tags" class="input" placeholder="Comma-separated tags">
+                    </div>
+                    <div class="form-group">
+                        <label class="label">Content *</label>
+                        <textarea id="content" class="textarea" placeholder="Enter your artifact content here..." required></textarea>
+                    </div>
+                </form>
+                <div class="modal-actions">
+                    <button class="button secondary" onclick="hideAddModal()">Cancel</button>
+                    <button class="button" onclick="saveArtifact()">💾 Save Artifact</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Modal -->
+        <div id="viewModal" class="modal hidden">
+            <div class="modal-content" style="max-width: 800px;">
+                <div id="artifactDetails"></div>
+                <div class="modal-actions">
+                    <button class="button" onclick="downloadCurrent()">📥 Download</button>
+                    <button class="button" onclick="toggleFavorite()">⭐ Favorite</button>
+                    <button class="button danger" onclick="deleteCurrent()">🗑️ Delete</button>
+                    <button class="button secondary" onclick="hideViewModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+        let allArtifacts = [];
+        let currentArtifact = null;
+
+        // Initialize the application
+        async function init() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/health`);
+                if (response.ok) {
+                    updateStatus('connected', 'Connected');
+                    await loadArtifacts();
+                } else {
+                    throw new Error('Health check failed');
+                }
+            } catch (error) {
+                updateStatus('disconnected', 'Disconnected');
+                showError('Cannot connect to backend server. Please ensure the Artifact Manager is running on localhost:5000',
+                         'Run: python artifact_manager.py --web --port 5000');
+                hideLoading();
+            }
+        }
+
+        function updateStatus(status, text) {
+            const statusEl = document.getElementById('status');
+            statusEl.className = `status ${status}`;
+            statusEl.innerHTML = `<div class="status-dot"></div><span>${text}</span>`;
+        }
+
+        async function loadArtifacts() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/artifacts`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const data = await response.json();
+                allArtifacts = data.artifacts || [];
+                renderArtifacts(allArtifacts);
+                hideLoading();
+                hideError();
+            } catch (error) {
+                showError('Failed to load artifacts: ' + error.message);
+                hideLoading();
+            }
+        }
+
+        function renderArtifacts(artifacts) {
+            const container = document.getElementById('artifacts');
+
+            if (artifacts.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">📄</div>
+                        <h3>No artifacts found</h3>
+                        <p>Create your first artifact to get started!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = artifacts.map(artifact => `
+                <div class="card" onclick="viewArtifact('${artifact.id}')">
+                    <div class="card-header">
+                        <h3 class="card-title">${escapeHtml(artifact.title)}</h3>
+                        <span style="font-size: 20px;">${artifact.favorite ? '⭐' : '☆'}</span>
+                    </div>
+                    <div class="card-meta">
+                        <div><strong>Type:</strong> ${artifact.artifact_type}</div>
+                        ${artifact.language ? `<div><strong>Language:</strong> ${artifact.language}</div>` : ''}
+                        <div><strong>Project:</strong> ${artifact.project}</div>
+                        <div><strong>Size:</strong> ${formatSize(artifact.size)}</div>
+                        <div><strong>Modified:</strong> ${formatDate(artifact.modified)}</div>
+                    </div>
+                    ${artifact.tags && artifact.tags.length > 0 ? `
+                        <div class="card-tags">
+                            ${artifact.language ? `<span class="tag language-tag">${artifact.language}</span>` : ''}
+                            ${artifact.tags.slice(0, 3).map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                            ${artifact.tags.length > 3 ? `<span class="tag">+${artifact.tags.length - 3} more</span>` : ''}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function filterArtifacts() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const typeFilter = document.getElementById('typeFilter').value;
+
+            const filtered = allArtifacts.filter(artifact => {
+                const matchesSearch = artifact.title.toLowerCase().includes(query) ||
+                                    (artifact.tags && artifact.tags.some(tag => tag.toLowerCase().includes(query)));
+                const matchesType = typeFilter === 'all' || artifact.artifact_type === typeFilter;
+                return matchesSearch && matchesType;
+            });
+
+            renderArtifacts(filtered);
+        }
+
+        // Event listeners
+        document.getElementById('search').addEventListener('input', filterArtifacts);
+        document.getElementById('typeFilter').addEventListener('change', filterArtifacts);
+
+        // Utility functions
+        function formatSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+
+        function formatDate(dateString) {
+            return new Date(dateString).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showError(message, suggestion = '') {
+            const errorEl = document.getElementById('error');
+            errorEl.innerHTML = `
+                <h3>Connection Error</h3>
+                <p>${message}</p>
+                ${suggestion ? `<p><strong>Solution:</strong> <code>${suggestion}</code></p>` : ''}
+                <button class="button" onclick="init()" style="margin-top: 12px;">🔄 Retry Connection</button>
+            `;
+            errorEl.classList.remove('hidden');
+        }
+
+        function hideError() {
+            document.getElementById('error').classList.add('hidden');
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').classList.add('hidden');
+        }
+
+        // Modal functions
+        function showAddModal() {
+            document.getElementById('addModal').classList.remove('hidden');
+        }
+
+        function hideAddModal() {
+            document.getElementById('addModal').classList.add('hidden');
+            document.getElementById('addForm').reset();
+        }
+
+        async function saveArtifact() {
+            const title = document.getElementById('title').value.trim();
+            const content = document.getElementById('content').value.trim();
+            const type = document.getElementById('type').value;
+            const language = document.getElementById('language').value.trim();
+            const tags = document.getElementById('tags').value.split(',').map(t => t.trim()).filter(t => t);
+
+            if (!title || !content) {
+                alert('Title and content are required!');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/artifacts`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        title,
+                        content,
+                        artifact_type: type,
+                        language: language || null,
+                        tags,
+                        project: 'default'
+                    })
+                });
+
+                if (response.ok) {
+                    hideAddModal();
+                    await loadArtifacts();
+                    alert('✅ Artifact created successfully!');
+                } else {
+                    const error = await response.json();
+                    alert('❌ Error: ' + error.error);
+                }
+            } catch (error) {
+                alert('❌ Failed to save artifact: ' + error.message);
+            }
+        }
+
+        async function viewArtifact(id) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/artifacts/${id}`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const artifact = await response.json();
+                currentArtifact = artifact;
+
+                document.getElementById('artifactDetails').innerHTML = `
+                    <h2>${escapeHtml(artifact.title)} ${artifact.favorite ? '⭐' : ''}</h2>
+                    <div style="margin-bottom: 20px;">
+                        <div class="card-meta">
+                            <div><strong>Type:</strong> ${artifact.artifact_type}</div>
+                            ${artifact.language ? `<div><strong>Language:</strong> ${artifact.language}</div>` : ''}
+                            <div><strong>Project:</strong> ${artifact.project}</div>
+                            <div><strong>Size:</strong> ${formatSize(artifact.size)}</div>
+                            <div><strong>Created:</strong> ${formatDate(artifact.created)}</div>
+                            <div><strong>Modified:</strong> ${formatDate(artifact.modified)}</div>
+                        </div>
+                        ${artifact.tags && artifact.tags.length > 0 ? `
+                            <div class="card-tags" style="margin-top: 12px;">
+                                ${artifact.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                    <h3>Content:</h3>
+                    <div class="artifact-content">${escapeHtml(artifact.content)}</div>
+                `;
+
+                document.getElementById('viewModal').classList.remove('hidden');
+            } catch (error) {
+                alert('❌ Failed to load artifact: ' + error.message);
+            }
+        }
+
+        function hideViewModal() {
+            document.getElementById('viewModal').classList.add('hidden');
+            currentArtifact = null;
+        }
+
+        async function downloadCurrent() {
+            if (!currentArtifact) return;
+            try {
+                const response = await fetch(`${API_BASE_URL}/artifacts/${currentArtifact.id}/download`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${currentArtifact.title}.${currentArtifact.language || 'txt'}`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                alert('❌ Download failed: ' + error.message);
+            }
+        }
+
+        async function toggleFavorite() {
+            if (!currentArtifact) return;
+            try {
+                const response = await fetch(`${API_BASE_URL}/artifacts/${currentArtifact.id}/favorite`, {
+                    method: 'PATCH'
+                });
+                if (response.ok) {
+                    currentArtifact.favorite = !currentArtifact.favorite;
+                    await loadArtifacts();
+                    // Update the modal display
+                    await viewArtifact(currentArtifact.id);
+                }
+            } catch (error) {
+                alert('❌ Failed to toggle favorite: ' + error.message);
+            }
+        }
+
+        async function deleteCurrent() {
+            if (!currentArtifact) return;
+            if (!confirm(`Are you sure you want to delete "${currentArtifact.title}"?`)) return;
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/artifacts/${currentArtifact.id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    hideViewModal();
+                    await loadArtifacts();
+                    alert('✅ Artifact deleted successfully!');
+                } else {
+                    alert('❌ Failed to delete artifact');
+                }
+            } catch (error) {
+                alert('❌ Delete failed: ' + error.message);
+            }
+        }
+
+        async function showStats() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/stats`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const stats = await response.json();
+                const typeStats = Object.entries(stats.by_type || {}).map(([type, count]) => `${type}: ${count}`).join('\n');
+                const langStats = Object.entries(stats.by_language || {}).map(([lang, count]) => `${lang}: ${count}`).join('\n');
+
+                alert(`📊 System Statistics\n\n` +
+                      `Total Artifacts: ${stats.total_artifacts}\n` +
+                      `Total Projects: ${stats.total_projects}\n` +
+                      `Storage Used: ${stats.storage_mb} MB\n\n` +
+                      `By Type:\n${typeStats}\n\n` +
+                      `By Language:\n${langStats}`);
+            } catch (error) {
+                alert('❌ Failed to load stats: ' + error.message);
+            }
+        }
+
+        // Initialize on page load
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
